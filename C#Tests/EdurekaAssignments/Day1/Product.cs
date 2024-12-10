@@ -14,29 +14,53 @@ namespace Day1
         public int ProductCode { get; set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
-        public double Discount { get; set; }
         public double Price { get; set; }
+        public double Discount { get; set; }
         public string Brand { get; set; }
 
-        List<Product> products = new List<Product>();
+        public Product()
+        {
+
+        }
+        public Product(int code,string name,int qty, double price, double discount, string brand) 
+        {
+            this.ProductCode = code;
+            this.Name = name;
+            this.Quantity = qty;
+            this.Price = price;
+            this.Discount = discount;
+            this.Brand = brand;
+        }
+    }
+
+    public class ProductManager
+    {
+        private List<Product> products;
+        public ProductManager()
+        {
+            products = new List<Product>
+            {
+                new Product(1, "Laptop", 10, 50000, 10, "Dell"),
+                new Product(2, "Mobile", 20, 15000, 5, "Samsung"),
+                new Product(3, "Headphones", 15, 2000, 20, "Sony")
+            };
+        }
         public void GetProductDetails()
         {
-            Product product = new Product();
-
             Console.WriteLine("Enter product Code");
-            product.ProductCode = Convert.ToInt32(Console.ReadLine());
+            int code = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter product Name");
-            product.Name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.WriteLine("Enter product Quantity");
-            product.Quantity = Convert.ToInt32(Console.ReadLine());
+            int quantity = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter product Price");
-            product.Price = Convert.ToDouble(Console.ReadLine());
+            double price = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter product Discount");
-            product.Discount = Convert.ToDouble(Console.ReadLine());
+            double discount = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter product Brand");
-            product.Brand = Convert.ToString(Console.ReadLine());
+            string brand = Convert.ToString(Console.ReadLine());
 
-            products.Add(product);
+            products.Add(new Product(code, name, quantity, price, discount, brand));
 
             Console.WriteLine("Product details added successfully");
 
@@ -75,7 +99,7 @@ namespace Day1
                     default:
                         Console.WriteLine("Invalid Input");
                         break;
-                } 
+                }
             }
         }
 
@@ -131,7 +155,7 @@ namespace Day1
 
                 if (char.ToLower(customerChoice) == 'y')
                 {
-                    CalculateAndPlaceOrderForCustomer(product);
+                    CalculateAndPlaceOrderForCustomer(product,qty);
                 }
                 else
                 {
@@ -143,25 +167,21 @@ namespace Day1
             {
                 Console.WriteLine("No products were present right now!");
             }
-
-            
-
-            
         }
 
-        void CalculateAndPlaceOrderForCustomer(Product product)
+        void CalculateAndPlaceOrderForCustomer(Product product,int qty)
         {
             double totalPrice;
 
-            totalPrice = (product.Discount/100) * product.Price * product.Quantity;
+            totalPrice = product.Price - ((product.Discount / 100) * product.Price * qty);
 
-            Console.WriteLine("Order placed successfully!\n");
+            Console.WriteLine("\nOrder placed successfully!\n");
             Console.WriteLine("Product Summary\n---------------");
-            Console.WriteLine($"Product Name : {product.Name}\nQuantity : {product.Quantity}" +
+            Console.WriteLine($"Product Name : {product.Name}\nQuantity : {qty}" +
                     $"\nPrice of Product : {product.Price}\nDiscount Allowed : {product.Discount}");
             Console.WriteLine("-------------------");
             Console.WriteLine("Total Price : " + totalPrice);
         }
-
     }
+
 }

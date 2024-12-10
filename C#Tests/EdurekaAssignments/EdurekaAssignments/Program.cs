@@ -49,7 +49,7 @@ namespace EdurekaAssignments
 
             //Assignment3
 
-            Product product = new Product();
+            ProductManager product = new ProductManager();
             product.CheckRole();
 
             Console.ReadKey();
