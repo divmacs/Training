@@ -1,0 +1,6 @@
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\bin\Debug\Day1.dll
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\bin\Debug\Day1.pdb
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\obj\Debug\Day1.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\obj\Debug\Day1.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\obj\Debug\Day1.dll
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\Day1\obj\Debug\Day1.pdb
