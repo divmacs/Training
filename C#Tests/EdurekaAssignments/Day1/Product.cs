@@ -133,7 +133,7 @@ namespace Day1
         {
             string name;
             int qty;
-            Product product = new Product();
+            Product productObj = new Product();
 
             Console.WriteLine("Enter product name want to purchase");
             name = Console.ReadLine().ToLower();
@@ -141,21 +141,34 @@ namespace Day1
             qty = Convert.ToInt32(Console.ReadLine());
 
             bool isProductPresent = products.Any(p => p.Name.ToLower() == name);
-            bool qtyPresent = product.Quantity <= qty;
+            bool qtyPresent = productObj.Quantity <= qty;
 
             if (isProductPresent && qtyPresent)
             {
-                product = products.Find(p => p.Name.ToLower() == name);
+                productObj = products.Find(p => p.Name.ToLower() == name);
 
-                Console.WriteLine($"Product Name : {product.Name}\nQuantity : {product.Quantity}" +
-                    $"\nPrice of Product : {product.Price}\nDiscount Allowed : {product.Discount}");
+                /*var plist = products.Where(p => p.Name.ToLower().Contains(name)).ToList();
+
+                if (plist.Count > 0)
+                {
+                    Console.WriteLine("Product found..");
+                    foreach (var product in plist)
+                    {
+                    Console.WriteLine($"Product Name : {product.Name}\nQuantity : {product.Quantity}" +
+                        $"\nPrice of Product : {product.Price}\nDiscount Allowed : {product.Discount}");
+                    }
+
+                }*/
+
+                Console.WriteLine($"Product Name : {productObj.Name}\nQuantity : {productObj.Quantity}" +
+                        $"\nPrice of Product : {productObj.Price}\nDiscount Allowed : {productObj.Discount}");
 
                 Console.WriteLine("Proceed to Buy.. Y/N?");
                 char customerChoice = Convert.ToChar(Console.ReadKey().KeyChar);
 
                 if (char.ToLower(customerChoice) == 'y')
                 {
-                    CalculateAndPlaceOrderForCustomer(product,qty);
+                    CalculateAndPlaceOrderForCustomer(productObj,qty);
                 }
                 else
                 {

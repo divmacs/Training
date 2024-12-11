@@ -114,7 +114,22 @@ namespace Day1
 
         public static void SumOfTenPositiveNumbers()
         {
+            int[] positiveNumbersArr = new int[10];
+            int sum = 0,count = 0;
+            
+            Console.WriteLine("Enter 10 numbers");
+            string input = Console.ReadLine().Trim();
+            positiveNumbersArr = input.Split(' ').Select(int.Parse).ToArray();
 
+            foreach (var num in positiveNumbersArr)
+            {
+                if (num > 0)
+                {
+                    sum += num;
+                    count++;
+                }
+            }
+            Console.WriteLine($"Sum of {count} out of 10 positive numbers is {sum}");
         }
 
         public static void SplitName()

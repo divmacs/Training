@@ -45,12 +45,28 @@ namespace EdurekaAssignments
             ///
             //Assignment2.CountNoOfChars("Macharla");
 
+            //Assignment2.CompareTwoString("Hello", "Divya");
 
+            //Assignment2.CopyStrings("Divya");
+
+            //Assignment2.CombineTwoStrings("Divya", "Macharla");
+
+            //Assignment2.CountNoOfWordsInSentence("Welcome to Edureka .NET Training");
+
+            //Assignment2.ReverseString("CSharp Training");
+
+            //Assignment2.IsPalindrome("never odd, or even");
+
+            //Assignment2.BasicOperationsOfTwoNumber(10,6);
+
+            //Assignment2.PrintTablesInRange(15, 20);
+
+            //Assignment2.PrintAllPrimeNumbersInRange(10, 15);
 
             //Assignment3
 
-            ProductManager product = new ProductManager();
-            product.CheckRole();
+            //ProductManager product = new ProductManager();
+            //product.CheckRole();
 
             Console.ReadKey();
 
