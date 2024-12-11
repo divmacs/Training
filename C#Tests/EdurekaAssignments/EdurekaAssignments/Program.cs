@@ -5,12 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Day1;
 
+
 namespace EdurekaAssignments
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            ///Assignment1
+            ///
+            ///
             //1.Display numbers from 2 to 100 with a gap of 2
             //Assignment1.Display2To100();
 
@@ -63,10 +67,14 @@ namespace EdurekaAssignments
 
             //Assignment2.PrintAllPrimeNumbersInRange(10, 15);
 
-            //Assignment3
-
+            ///Assignment3
+            ///
             //ProductManager product = new ProductManager();
             //product.CheckRole();
+
+
+
+
 
             Console.ReadKey();
 
