@@ -13,18 +13,23 @@ namespace Day2
         public string Name { get; set; }
         public string ReportingManager { get; set; }
 
+        public Employee()
+        {
+
+        }
         public Employee(string name, string RM)
         {
             EmpId = _EmpIdIndex++;
             Name = name;
             ReportingManager = RM;
         }
-
-        public abstract void DisplayEmployeeDetails();
-
     }
     public class ContractEmployee : Employee
     {
+        public ContractEmployee()
+        {
+
+        }
         public ContractEmployee(string name, string RM,int duration, double charges) : base(name, RM)
         {
             Name = name;
@@ -36,12 +41,6 @@ namespace Day2
         public int ContractDurationInMonths { get; set; }
         public double Charges { get; set; }
 
-        public override void DisplayEmployeeDetails()
-        {
-            Console.WriteLine("Contract Employee Details\n-------------------");
-            Console.WriteLine($"ContractID : {EmpId}\nName : {Name}\nReporting Manager : {ReportingManager}\n" +
-                $"ContractDuration : {ContractDurationInMonths}(months)\nCharges : {Charges}");
-        }
     }
     public class PayrollEmployee : Employee
     {
@@ -51,7 +50,10 @@ namespace Day2
         public double HRA { get; set; }
         public double DA { get; set; }
         public double PF { get; set; }
+        public PayrollEmployee()
+        {
 
+        }
         public PayrollEmployee(string name, string RM, DateTime doj, double exp, double basicSalary, 
             double hra, double da, double pf) : base(name, RM)
         {
@@ -65,7 +67,7 @@ namespace Day2
             PF = pf;
         }
 
-        public double CalNetSalary()
+        public double CalNetSalary(PayrollEmployee employee)
         {
             /*
             if exp > 10 years , DA = 10% of basic, HRA = 8.5 % of basic , PF = 6200
@@ -74,53 +76,43 @@ namespace Day2
             if exp < 5 years , DA = 1.9% of basic, HRA = 2.0 % of basic , PF = 1200
             */
 
-            if(YoE < 5)
+            if(employee.YoE < 5)
             {
-                DA = (1.9 / 100) * BasicSalary;
-                HRA = (2 / 100) * BasicSalary;
-                PF = 1200;
+                employee.DA = (1.9 / 100) * employee.BasicSalary;
+                employee.HRA = (2 / 100) * employee.BasicSalary;
+                employee.PF = 1200;
             }
-            else if(YoE > 5 && YoE < 7)
+            else if(employee.YoE > 5 && employee.YoE < 7)
             {
-                DA = (4.1 / 100) * BasicSalary;
-                HRA = (3.8 / 100) * BasicSalary;
-                PF = 1800;
+                employee.DA = (4.1 / 100) * employee.BasicSalary;
+                employee.HRA = (3.8 / 100) * employee.BasicSalary;
+                employee.PF = 1800;
             }
-            else if(YoE > 7 && YoE < 10)
+            else if(employee.YoE > 7 && employee.YoE < 10)
             {
-                DA = (7 / 100) * BasicSalary;
-                HRA = (86.5 / 100) * BasicSalary;
-                PF = 4100;
+                employee.DA = (7 / 100) * employee.BasicSalary;
+                employee.HRA = (86.5 / 100) * employee.BasicSalary;
+                employee.PF = 4100;
             }
-            else if(YoE > 10)
+            else if(employee.YoE > 10)
             {
-                DA = (10 / 100) * BasicSalary;
-                HRA = (8.5 / 100) * BasicSalary;
-                PF = 6200;
+                employee.DA = (10 / 100) * employee.BasicSalary;
+                employee.HRA = (8.5 / 100) * employee.BasicSalary;
+                employee.PF = 6200;
             }
 
-            double grossSalary = BasicSalary + DA + HRA + PF;
-            double netSalary = grossSalary - PF;
+            double grossSalary = employee.BasicSalary + employee.DA + employee.HRA + employee.PF;
+            double netSalary = grossSalary - employee.PF;
 
             return netSalary;
         }
 
-        public override void DisplayEmployeeDetails()
-        {
-            double netSalary = CalNetSalary();
-            Console.WriteLine("Payroll Employee Details\n----------------------------");
-            Console.WriteLine($"EmployeeID : {EmpId}\nName : {Name}\nReporting Manager : {ReportingManager}\n" +
-                $"Joining Date : {DoJ}\nYears Of Experience : {YoE}\nBasic Salary : {BasicSalary}" +
-                $"HRA : {HRA}\nDA : {DA}\nPF : {PF}\n");
-            Console.WriteLine("Total Salary\n............");
-            Console.WriteLine(netSalary);
-        }
     }
 
     public class EmployeeManager
     {
-        List<PayrollEmployee> payrollEmployees;
-        List<ContractEmployee> contractEmployees = new List<ContractEmployee>();
+        List<PayrollEmployee> payrollEmployees { get; set; }
+        List<ContractEmployee> contractEmployees { get; set; }
 
         public EmployeeManager()
         {
@@ -148,5 +140,127 @@ namespace Day2
         
         } 
 
+        public void MainMenu()
+        {
+            int choice = -1;
+            do
+            {
+                Console.WriteLine("Welcome Employee Management Application");
+                Console.WriteLine(".........................................");
+                Console.WriteLine("1. Add Payroll Employee\n2. Display Payroll Employees\n3. Add Contract Employee\n" +
+                    "4. Display Contract Employee Detalils\n5. Total Employees\n6. Clear Console\n0. Exit\n");
+
+                if (int.TryParse(Console.ReadLine(),out choice))
+                {
+                    switch (choice)
+                    {
+                        case 1:
+                            GetPayrollEmployeeDetails();
+                            break;
+                        case 2:
+                            DisplayPayrollEmployeeDetails();
+                            break;
+                        case 3:
+                            GetContractEmployeeDetails();
+                            break;
+                        case 4:
+                            DisplayContractEmployeeDetails();
+                            break;
+                        case 5:
+                            TotalEmployees();
+                            break;
+                        case 6:
+                            Console.Clear();
+                            break;
+                        case 0:
+                            Console.WriteLine("Exiting application..!");
+                            break;
+                        default:
+                            Console.WriteLine("Chose valid input");
+                            break;
+                    } 
+                }
+                if(choice != 0)
+                {
+                    Console.WriteLine("Enter any key to go main menu");
+                    Console.ReadLine();
+                }
+            } 
+            while (choice != 0);        }
+
+        public void DisplayContractEmployeeDetails()
+        {
+            Console.WriteLine("Contract Employee Details\n-------------------");
+
+            foreach (var emp in contractEmployees)
+            {
+                Console.WriteLine($"ContractID : {emp.EmpId}\nName : {emp.Name}\nReporting Manager : {emp.ReportingManager}\n" +
+                        $"ContractDuration : {emp.ContractDurationInMonths}(months)\nCharges : {emp.Charges}\n");
+            }
+        }
+
+        public void GetContractEmployeeDetails()
+        {
+            Console.WriteLine("Enter Contract Employee Details");
+            Console.WriteLine("...................................");
+            Console.WriteLine("Enter Employee Name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter RM name");
+            string rm = Console.ReadLine();
+            Console.WriteLine("Enter contract durantion(months)");
+            int duration = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter contract charges");
+            double charges = Convert.ToDouble(Console.ReadLine());
+
+            contractEmployees.Add(new ContractEmployee(name, rm, duration, charges));
+        }
+
+        public void DisplayPayrollEmployeeDetails()
+        {
+            PayrollEmployee payrollEmployeeObj = new PayrollEmployee();
+            double netSalary = 0; 
+            Console.WriteLine("Payroll Employee Details\n----------------------------");
+            foreach (var emp in payrollEmployees)
+            {
+                Console.WriteLine($"EmployeeID : {emp.EmpId}\nName : {emp.Name}\nReporting Manager : {emp.ReportingManager}\n" +
+            $"Joining Date : {emp.DoJ}\nYears Of Experience : {emp.YoE}\nBasic Salary : {emp.BasicSalary}\n" +
+            $"HRA : {emp.HRA}\nDA : {emp.DA}\nPF : {emp.PF}\n");
+                netSalary = payrollEmployeeObj.CalNetSalary(emp);
+                Console.WriteLine("Total Salary\n............");
+                Console.WriteLine(netSalary);
+                Console.WriteLine("............\n");
+            }            
+        }
+
+        public void GetPayrollEmployeeDetails()
+        {
+            Console.WriteLine("Enter Payroll Employee Details");
+            Console.WriteLine("...................................");
+            Console.WriteLine("Enter Employee Name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Enter RM name");
+            string rm = Console.ReadLine();
+            Console.WriteLine("Enter Joined date(YYYY-MM-DD)");
+            DateTime doj = Convert.ToDateTime(Console.ReadLine());
+            Console.WriteLine("Enter Experience in years");
+            double exp = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter basic salary");
+            double basicSal = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter HRA");
+            double hra = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter DA");
+            double da = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter PF Amount");
+            double pf = Convert.ToDouble(Console.ReadLine());
+
+            payrollEmployees.Add(new PayrollEmployee(name, rm, doj, exp, basicSal, hra, da, pf));
+
+        }
+
+        public void TotalEmployees()
+        {
+            int totalCount = payrollEmployees.Count + contractEmployees.Count;
+            Console.WriteLine($"\nTotal number of Employees is : {totalCount}\n");
+        }
     }
 }

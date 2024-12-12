@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EdurekaAssignments\Inheritance\Inheritance.csproj">
+      <Project>{0a6d7c2c-f5b3-4a29-a56e-a5d997cc84ef}</Project>
+      <Name>Inheritance</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

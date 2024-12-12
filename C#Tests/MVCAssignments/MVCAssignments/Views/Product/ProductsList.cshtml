@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "ProductsList";
+    var products = @ViewBag.Products;
+}
+
+@*@model IEnumerable<MVCAssignments.Models.Product>;*@
+
+<h1>ProductsList</h1>
+
+@*Pass list data from controller to view *@
+
+@*<div>
+    @foreach (var item in @Model)
+    {
+        <p>Product Code : @item.ProductCode</p>
+        <p>Product Name : @item.ProductName</p>
+        <p>Quantity : @item.Quantity</p>
+        <p>Description : <br/>
+            @foreach (var desc in @item.DescriptionDetails)
+            {
+                @desc.ToString();<br />
+            }
+        </p>
+        <p>Price : @item.Price</p>
+        <hr />
+    }
+</div>*@
+
+@*Pass list data from controller to view using ViewBag *@
+
+<div>
+    @foreach (var item in @products)
+    {
+        <p>Product Code : @item.ProductCode</p>
+        <p>Product Name : @item.ProductName</p>
+        <p>Quantity : @item.Quantity</p>
+        <p>Description : <br/>
+            @foreach (var desc in @item.DescriptionDetails)
+            {
+                @desc.ToString();<br />
+            }
+        </p>
+        <p>Price : @item.Price</p>
+        <hr />
+    }
+</div>

@@ -9,3 +9,5 @@ C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\obj\Debug\Edureka
 C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\obj\Debug\EdurekaAssignments.csproj.CopyComplete
 C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\obj\Debug\EdurekaAssignments.exe
 C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\obj\Debug\EdurekaAssignments.pdb
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\bin\Debug\Day2.dll
+C:\Divya\Edureka\C#Tests\EdurekaAssignments\EdurekaAssignments\bin\Debug\Day2.pdb

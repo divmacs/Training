@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EdurekaPortalAssignments", "EdurekaPortalAssignments\EdurekaPortalAssignments.csproj", "{6E325B97-B75D-4ED7-8657-33B7CE4ECA0F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "..\EdurekaAssignments\Inheritance\Inheritance.csproj", "{0A6D7C2C-F5B3-4A29-A56E-A5D997CC84EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6E325B97-B75D-4ED7-8657-33B7CE4ECA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E325B97-B75D-4ED7-8657-33B7CE4ECA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E325B97-B75D-4ED7-8657-33B7CE4ECA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6D7C2C-F5B3-4A29-A56E-A5D997CC84EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6D7C2C-F5B3-4A29-A56E-A5D997CC84EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6D7C2C-F5B3-4A29-A56E-A5D997CC84EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6D7C2C-F5B3-4A29-A56E-A5D997CC84EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

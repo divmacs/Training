@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "OneProduct";
+    
+    //var product = @ViewBag.Product;
+
+}
+@model MVCAssignments.Models.Product;
+
+<h1>OneProduct</h1>
+
+@*Passing Data from controller to view *@
+<div>
+    <p>Product Code : @Model.ProductCode</p>
+    <p>Product Name : @Model.ProductName</p>
+    <p>Quantity : @Model.Quantity</p>
+    <p>Description : <br/> 
+        @foreach (var item in @Model.DescriptionDetails)
+        {
+            @item.ToString();<br />
+        }
+    </p>
+    <p>Price : @Model.Price</p>
+</div>
+<div>
+    Go to <a asp-area="" asp-controller="Product" asp-action="ProductsList">Products</a>
+</div>
+
+@*Passing Data from Controller to view using ViewBag*@
+@*<div>
+    <p>Product Code : @product.ProductCode</p>
+    <p>Product Name : @product.ProductName</p>
+    <p>Quantity : @product.Quantity</p>
+    <p>Description : <br/>
+        @foreach (var item in @product.DescriptionDetails)
+        {
+            @item.ToString();<br />
+        }
+    </p>
+    <p>Price : @product.Price</p>
+</div>*@

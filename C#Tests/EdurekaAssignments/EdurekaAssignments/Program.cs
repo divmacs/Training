@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Day1;
-
+using Day2;
 
 namespace EdurekaAssignments
 {
@@ -67,13 +67,18 @@ namespace EdurekaAssignments
 
             //Assignment2.PrintAllPrimeNumbersInRange(10, 15);
 
+
             ///Assignment3
             ///
-            //ProductManager product = new ProductManager();
-            //product.CheckRole();
+            /*ProductManager product = new ProductManager();
+            product.CheckRole();*/
 
 
-
+            ///Assignment4
+            ///
+            ///
+            /*EmployeeManager employeeManager = new EmployeeManager();
+            employeeManager.MainMenu();*/
 
 
             Console.ReadKey();
