@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E325B97-B75D-4ED7-8657-33B7CE4ECA0F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>EdurekaPortalAssignments</RootNamespace>
+    <AssemblyName>EdurekaPortalAssignments</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GeometricAreasHelper\GeometricAreasHelper.csproj">
+      <Project>{ad806ce2-374a-4196-a321-4a16200d1b87}</Project>
+      <Name>GeometricAreasHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GuessProductGame\GuessProductGame.csproj">
+      <Project>{8b8723ad-b857-482a-8f6c-875fc67ad819}</Project>
+      <Name>GuessProductGame</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inheritance\Inheritance.csproj">
+      <Project>{ee1a1ab4-8cf8-4f8c-ad43-45d2d9c51773}</Project>
+      <Name>Inheritance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultiplicationTable\MultiplicationTable.csproj">
+      <Project>{B4743E31-7321-49BE-903C-1235ED995DFF}</Project>
+      <Name>MultiplicationTable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Print3DaysDates\Print3DaysDates.csproj">
+      <Project>{B8147C4E-5343-4832-B153-8403626B51C8}</Project>
+      <Name>Print3DaysDates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrintPatterns\PrintPatterns.csproj">
+      <Project>{1153584E-1FAE-4976-BFA3-0F7A52FF8046}</Project>
+      <Name>PrintPatterns</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

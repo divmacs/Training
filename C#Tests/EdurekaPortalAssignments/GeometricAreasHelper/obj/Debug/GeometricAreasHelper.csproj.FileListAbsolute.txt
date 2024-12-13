@@ -1,0 +1,6 @@
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\bin\Debug\GeometricAreasHelper.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\bin\Debug\GeometricAreasHelper.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\obj\Debug\GeometricAreasHelper.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\obj\Debug\GeometricAreasHelper.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\obj\Debug\GeometricAreasHelper.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\GeometricAreasHelper\obj\Debug\GeometricAreasHelper.pdb

@@ -1,0 +1,6 @@
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\bin\Debug\Inheritance.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\bin\Debug\Inheritance.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\obj\Debug\Inheritance.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\obj\Debug\Inheritance.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\Inheritance\obj\Debug\Inheritance.pdb

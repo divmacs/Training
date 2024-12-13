@@ -1,0 +1,13 @@
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\EdurekaPortalAssignments.exe.config
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\EdurekaPortalAssignments.exe
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\EdurekaPortalAssignments.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\Inheritance.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\Inheritance.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.csproj.SuggestedBindingRedirects.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.csproj.CopyComplete
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.exe
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\obj\Debug\EdurekaPortalAssignments.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\GeometricAreasHelper.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\EdurekaPortalAssignments\bin\Debug\GeometricAreasHelper.pdb

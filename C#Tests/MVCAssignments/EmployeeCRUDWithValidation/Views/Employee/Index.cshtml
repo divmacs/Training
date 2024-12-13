@@ -1,0 +1,36 @@
+﻿@model IEnumerable<EmployeeCRUDWithValidation.Models.Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<h1>Employee List</h1>
+
+<p>
+    <a asp-action="Create">Create Employee</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Date of Joining</th>
+            <th>Salary</th>
+            <th>Dept</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>@item.DoB.ToShortDateString()</td>
+                <td>@item.DoJ.ToShortDateString()</td>
+                <td>@item.Salary</td>
+                <td>@item.Department</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,6 @@
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\bin\Debug\PrintPatterns.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\bin\Debug\PrintPatterns.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\obj\Debug\PrintPatterns.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\obj\Debug\PrintPatterns.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\obj\Debug\PrintPatterns.dll
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\PrintPatterns\obj\Debug\PrintPatterns.pdb
