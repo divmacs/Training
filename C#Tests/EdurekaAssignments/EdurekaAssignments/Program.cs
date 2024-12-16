@@ -40,10 +40,12 @@ namespace EdurekaAssignments
             //Assignment1.CountNoOfVowels();
 
             //9.Add two classes with Main Method, Run program fron 2nd class
-
+            //Console.WriteLine("Running Main() method from First Program.cs class");
+            ///By setting up StartupObject in .csproj projectfile, can run Program 2nd class 
+            
 
             //10. WAF for displaying numbers from 1 to 10. Use Debug feature to see flow of program
-
+            //Assignment1.DisplayNumbers();
 
             ///Assignment2
             ///

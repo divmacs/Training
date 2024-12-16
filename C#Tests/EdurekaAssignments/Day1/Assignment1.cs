@@ -161,5 +161,15 @@ namespace Day1
             Console.WriteLine("No of vowels in given name is " + count); 
         }
 
+        // Function to display numbers from 1 to 10
+        public static void DisplayNumbers()
+        {
+            // Loop through numbers 1 to 10
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
     }
 }
