@@ -1,0 +1,12 @@
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\bin\Debug\net6.0\DTO.deps.json
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\bin\Debug\net6.0\DTO.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\bin\Debug\net6.0\DTO.pdb
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\refint\DTO.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\DTO.pdb
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DTO\obj\Debug\net6.0\ref\DTO.dll

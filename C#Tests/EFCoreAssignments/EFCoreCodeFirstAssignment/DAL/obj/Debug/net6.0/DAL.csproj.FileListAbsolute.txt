@@ -1,0 +1,17 @@
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DAL.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DTO.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\bin\Debug\net6.0\DTO.pdb
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+C:\Divya\Edureka\C#Tests\EFCoreAssignments\EFCoreCodeFirstAssignment\DAL\obj\Debug\net6.0\ref\DAL.dll
