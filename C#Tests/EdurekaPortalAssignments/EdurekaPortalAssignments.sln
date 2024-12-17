@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintPatterns", "PrintPatte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessProductGame", "GuessProductGame\GuessProductGame.csproj", "{8B8723AD-B857-482A-8F6C-875FC67AD819}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsAssignment", "CollectionsAssignment\CollectionsAssignment.csproj", "{DA859975-B8D0-4100-954E-81A3B9506703}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8B8723AD-B857-482A-8F6C-875FC67AD819}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B8723AD-B857-482A-8F6C-875FC67AD819}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B8723AD-B857-482A-8F6C-875FC67AD819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA859975-B8D0-4100-954E-81A3B9506703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA859975-B8D0-4100-954E-81A3B9506703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA859975-B8D0-4100-954E-81A3B9506703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA859975-B8D0-4100-954E-81A3B9506703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

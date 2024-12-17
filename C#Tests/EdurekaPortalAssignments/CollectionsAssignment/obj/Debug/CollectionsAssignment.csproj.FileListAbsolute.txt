@@ -1,0 +1,8 @@
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\bin\Debug\CollectionsAssignment.exe.config
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\bin\Debug\CollectionsAssignment.exe
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\bin\Debug\CollectionsAssignment.pdb
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\obj\Debug\CollectionsAssignment.csproj.AssemblyReference.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\obj\Debug\CollectionsAssignment.csproj.SuggestedBindingRedirects.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\obj\Debug\CollectionsAssignment.csproj.CoreCompileInputs.cache
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\obj\Debug\CollectionsAssignment.exe
+C:\Divya\Edureka\C#Tests\EdurekaPortalAssignments\CollectionsAssignment\obj\Debug\CollectionsAssignment.pdb
